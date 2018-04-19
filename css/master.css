@@ -40,15 +40,22 @@
   height: calc(100vh - 300px);
   /* padding-top: 24px; */
   padding:24px 0 50px 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
   .info .side {
-    float: left;
-    width: calc(100%-830px/2 - 20px);
+    /* float: left; */
+    /* width: calc(100%-830px/2 - 20px); */
+    flex: 1, 0, content;
   }
   .info .middle {
-    float: left;
+    /* float: left; */
     width: 830px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
+    flex: 0, 0, content;
   }
     .info h2 {
       font-family: "Museo";
@@ -59,11 +66,16 @@
       border-bottom: 3px solid #E60028;
       display: block;
     }
-    .info .middle #leaderboard {
-      border: none;
-      width: 830px;
-      height: 550px;
+
+    .info .score {
       display: block;
+      border: none;
+      width: 500px;
+      height: 550px;
+    }
+
+    .info .middle #leaderboard {
+      width: 830px;
     }
 
     .info .side table {

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Activites Day Scoreboard</title>
+    <link rel="stylesheet" href="css/master.css">
+    <meta http-equiv="refresh" content="60" >
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <h1>—<br>School of Engineering Scoreboard</h1>
+      </section>
+
+      <section class="info">
+        <div class="side">
+          <h2>Reaction</h2>
+            <table>
+              <thead>
+                <th>Name</th>
+                <th>School/Discipline</th>
+                <th>Score</th>
+              </thead>
+              <tbody sheetsu="https://sheetsu.com/apis/v1.0su/77ead4b3f40a/sheets/Eng_Reaction/">
+                <tr>
+                  <td>{{Name}}</td>
+                  <td>{{School/Discipline}}</td>
+                  <td>{{Score}}</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+
+        <div class="middle">
+            <h2>Leaderboard</h2>
+            <iframe id="leaderboard" src="https://docs.google.com/a/rmit.edu.au/spreadsheets/d/e/2PACX-1vQlG3VvJ2d3--tBrctpR9dZdAZpaXrf7RbQ9AG83cMEjbKX-7ZO5JDmSkIFIMwZrjLSjW5Ttr1i0T0O/pubhtml?gid=1594374041&single=true" scrolling="no"></iframe>
+        </div>
+
+        <div class="side">
+          <h2>Basketball</h2>
+          <table>
+            <thead>
+              <th>Name</th>
+              <th>School/Discipline</th>
+              <th>Score</th>
+            </thead>
+            <tbody sheetsu="https://sheetsu.com/apis/v1.0su/77ead4b3f40a/sheets/Eng_Basketball/">
+              <tr>
+                <td>{{Name}}</td>
+                <td>{{School/Discipline}}</td>
+                <td>{{Score}}</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+      </section>
+      <img id="logo" src="resources/logo.png" alt="Student Life Logo">
+    </div>
+        <script src="sheetsu.js"></script>
+  </body>
+</html>
